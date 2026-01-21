@@ -1,7 +1,6 @@
 package core.basesyntax.impl;
 
 import core.basesyntax.Storage;
-
 import java.util.Objects;
 
 public class StorageImpl<K, V> implements Storage<K, V> {
@@ -16,7 +15,6 @@ public class StorageImpl<K, V> implements Storage<K, V> {
         this.values = (V[]) new Object[MAX_ITEMS_NUMBER];
         this.size = 0;
     }
-
 
     @Override
     public void put(K key, V value) {
